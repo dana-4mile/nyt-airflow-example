@@ -1,0 +1,6 @@
+gcs_keyfile.json
+/Docker/logs
+/Docker/logs/*
+*.pyc
+*.log
+*.DS_Store

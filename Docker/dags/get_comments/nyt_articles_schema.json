@@ -1,0 +1,305 @@
+[
+  {
+    "mode": "NULLABLE",
+    "name": "word_count",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "_id",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "type_of_material",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "organization",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "rank",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "organization",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "role",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "qualifier",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "lastname",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "middlename",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "title",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "firstname",
+            "type": "STRING"
+          }
+        ],
+        "mode": "REPEATED",
+        "name": "person",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "original",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "byline",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "subsection_name",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "major",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "rank",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "value",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "keywords",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "section_name",
+    "type": "STRING"
+  },
+  {
+    "description": "%Y-%m-%dT%H:%M:%E*S%Ez",
+    "mode": "NULLABLE",
+    "name": "pub_date",
+    "type": "TIMESTAMP"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "lead_paragraph",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "sub",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "seo",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "print_headline",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "content_kicker",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "kicker",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "main",
+        "type": "STRING"
+      }
+    ],
+    "mode": "NULLABLE",
+    "name": "headline",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "print_section",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "snippet",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "news_desk",
+    "type": "STRING"
+  },
+  {
+    "fields": [
+      {
+        "mode": "NULLABLE",
+        "name": "width",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "height",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "url",
+        "type": "STRING"
+      },
+      {
+        "fields": [
+          {
+            "mode": "NULLABLE",
+            "name": "thumbnailheight",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "thumbnailwidth",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "thumbnail",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "xlargewidth",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "xlargeheight",
+            "type": "STRING"
+          },
+          {
+            "mode": "NULLABLE",
+            "name": "xlarge",
+            "type": "STRING"
+          }
+        ],
+        "mode": "NULLABLE",
+        "name": "legacy",
+        "type": "RECORD"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "type",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "credit",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "subtype",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "caption",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "crop_name",
+        "type": "STRING"
+      },
+      {
+        "mode": "NULLABLE",
+        "name": "rank",
+        "type": "STRING"
+      }
+    ],
+    "mode": "REPEATED",
+    "name": "multimedia",
+    "type": "RECORD"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "source",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "uri",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "document_type",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "web_url",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "print_page",
+    "type": "STRING"
+  },
+  {
+    "mode": "NULLABLE",
+    "name": "abstract",
+    "type": "STRING"
+  }
+]

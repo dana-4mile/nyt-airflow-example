@@ -1,0 +1,24 @@
+airflow_args:
+  depends_on_past: True
+  email: 'airflow@example.com'
+  email_on_failure: False
+  email_on_retry: False
+  retries: 1
+  retry_delay: 5
+  description: 'A DAG that runs monthly to retrieve all article metadata from the NYT Archives.'
+  schedule_interval: '0 2 2 * *'
+  start_year: 2010
+  start_month: 1
+  start_day: 2
+  start_hour: 2
+  catchup: True
+  local_tz: "America/Denver"
+  max_active_runs: 1
+gcs_args:
+  gcs_bucket: 'project-bovine'
+  bq_project: 'boxwood-victor-347622'
+  stg_dataset: 'nyt_articles_stg'
+  prod_dataset: 'nyt_articles'
+  prod_table: 'nyt_articles'
+api_args:
+  comments_endpoint: 'https://api.nytimes.com/svc/archive/v1/{date_path}.json'
